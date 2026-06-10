@@ -1,0 +1,13 @@
+project_name = "empapp"
+environment  = "dev"
+location     = "australiaeast"
+
+# Key Vault is fully private — Terraform must run from a VNet-integrated
+# self-hosted pipeline agent (e.g. GitHub Actions runner in platform-snet).
+
+app_service_sku     = "P1v3"
+cosmosdb_throughput = 400
+
+tags = {
+  Owner = "your-name"
+}

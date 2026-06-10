@@ -1,0 +1,21 @@
+{
+  "name": "employee-api",
+  "version": "1.0.0",
+  "description": "Employee directory API — Node.js/Express backed by Azure Cosmos DB (managed identity auth)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^4.1.0",
+    "@azure/identity": "^4.4.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,32 @@
+# Terraform — state files and local overrides contain sensitive data
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+*.tfstate.lock.info
+.terraform.lock.hcl
+terraform.tfvars
+
+# Claude Code local settings
+.claude/
+
+# Node
+node_modules/
+app/client/build/
+
+# Environment files
+.env
+app/api/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude session context
+CLAUDE.md
+
+# Local backup of previous remote content
+backup-remote/
+
+# Terraform plan binary output
+infra/.outfile1.txt
